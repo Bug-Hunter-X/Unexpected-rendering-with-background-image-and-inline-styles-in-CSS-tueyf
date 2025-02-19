@@ -1,0 +1,27 @@
+To fix this issue, use an absolute path to the image or move the CSS to a separate stylesheet.  Here's how you would fix it with an absolute path:
+
+```css
+<div style="background-image: url(/images/image.png);"></div>
+```
+
+Alternatively, place the CSS in a separate stylesheet and then link that stylesheet to the HTML:
+
+**CSS (style.css):**
+```css
+div {
+  background-image: url("image.png");
+}
+```
+
+**HTML:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div></div>
+</body>
+</html>
+```
