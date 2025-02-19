@@ -1,0 +1,5 @@
+The following CSS code causes an unexpected rendering issue in some browsers. The `background-image` property does not apply correctly when used with inline styles and a relative path.
+
+```css
+<div style="background-image: url(./image.png);"></div>
+```
